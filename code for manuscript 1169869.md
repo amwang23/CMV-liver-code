@@ -206,7 +206,7 @@ VlnPlot(test,features= 'group score', group.by = "total.cluster", pt.size=0)
 data <- readRDS(infile.rds)
 ```
 
-#### #Build S4 object
+#### #Build object
 
 ```
 HSMM <- newCellDataSet(count, phenoData = pd, featureData = fd)
