@@ -1,4 +1,13 @@
-## ## Seurat_SingleR
+## ## Cellranger(V 4.0)
+
+```
+cellranger count --id=run_count_CMV \
+   --fastqs=/CMV_fastqs \
+   --sample=CMV \
+   --transcriptome=/refdata
+```
+
+## ## Seurat_SingleR(using R)
 
 #### # packages preparation
 
@@ -11,7 +20,7 @@ library(DoubletFinder)
 #### #Read CellRanger partial matrix files
 
 ```
-Data <- read.table(matrix.csv)
+Data <-  Read10X(data.dir="/CMV")
 ```
 
 #### #Create SeuratObject
